@@ -10,7 +10,7 @@ const HeroSection = async ({ api }) => {
   return (
     <>
       <section
-        className="h-screen md:h-[70vh] w-full relative bg-cover flex justify-center items-center bg-center"
+        className="h-screen md:h-[60vh] w-full relative bg-cover flex justify-center items-center bg-center"
         style={styling}
       >
         <div className="bg-black -z-1 absolute top-0 right-0 left-0 bottom-0 bg opacity-50"></div>

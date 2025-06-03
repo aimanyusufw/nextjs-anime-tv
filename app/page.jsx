@@ -14,12 +14,11 @@ export default async function Home() {
 
   recomendAnime = { data: recomendAnime.slice(startRandom, startRandom + 6) };
 
-  const heroData = topAnime.data[4];
-
-  const animeCta = topAnime.data[5];
+  const heroData = topAnime.data[5];
+  const animeCta = topAnime.data[1];
 
   const animeListData = topAnime.data.filter(
-    (_, index) => index !== 5 && index !== 4
+    (_, index) => index !== 1 && index !== 5
   );
 
   return (
@@ -27,20 +26,20 @@ export default async function Home() {
       <HeroSection api={heroData} />
       <AnimeList
         title={"Top Anime"}
-        show_all_url={"/anime"}
-        maim_url={"/anime"}
+        show_all_url={"/animes"}
+        maim_url={"/animes"}
         data={animeListData}
       />
       <AnimeList
         title={"Top Manga"}
-        show_all_url={"/manga"}
-        maim_url={"/manga"}
+        show_all_url={"/mangas"}
+        maim_url={"/mangas"}
         data={topManga.data}
       />
       <AnimeList
         title={"Recomend Anime"}
-        maim_url={"/anime"}
-        show_all_url={"/anime"}
+        maim_url={"/animes"}
+        show_all_url={"/animes"}
         data={recomendAnime.data}
       />
       <AnimeCta data={animeCta} />
