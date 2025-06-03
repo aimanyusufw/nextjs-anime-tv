@@ -25,7 +25,7 @@ const HeroSection = async ({ api }) => {
             <h5 className="text-xs md:text-sm mb-3">
               {`${api.aired.string} ·  ${api.duration}`}
             </h5>
-            <Link href={`/anime/${api.mal_id}`}>
+            <Link href={`/animes/${api.mal_id}`}>
               <h1 className="text-4xl md:text-6xl font-bold max-w-3xl mb-10 leading-relaxed">
                 {api.title}
               </h1>
