@@ -73,7 +73,7 @@ const Page = async ({ params }) => {
   return (
     <section className="min-h-screen">
       <div className="container">
-        <div className="w-full md:w-3/4 mx-auto px-4 py-20">
+        <div className="w-full md:w-3/4 mx-auto px-4 py-24">
           <BackButton />
           {trailer?.youtube_id !== null ? (
             <YoutubePlayer
