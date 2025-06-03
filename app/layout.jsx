@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="theme-color" content="#2C2C2C" />
+        <link rel="icon" href="/favicon.svg" sizes="any" />
       </head>
       <body className={`${inter.className} bg-dark text-white`}>
         <NextTopLoader showSpinner={false} color="#F51E51" />
