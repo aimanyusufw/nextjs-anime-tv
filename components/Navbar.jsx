@@ -12,9 +12,14 @@ const Navbar = async () => {
   return (
     <nav className="absolute top-0 right-0 left-0 z-50">
       <div className="container">
-        <div className="w-full px-4 flex justify-between py-7 flex-wrap items-center">
+        <div className="w-full px-4 flex justify-between py-6 flex-wrap items-center">
           <Link href={"/"} className="font-bold text-2xl mb-5 md:mb-0">
-            Anime Tv
+            <Image
+              src={"/logo.svg"}
+              width={160}
+              height={90}
+              alt="Anime TV Website Logo"
+            />
           </Link>
           <div className="flex gap-5 items-center">
             <Link
