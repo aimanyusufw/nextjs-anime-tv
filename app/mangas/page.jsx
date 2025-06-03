@@ -21,7 +21,7 @@ const Page = () => {
   return (
     <section className="min-h-screen">
       <div className="py-24">
-        <AnimeList data={topAnime.data} maim_url={"/manga"} />
+        <AnimeList data={topAnime.data} maim_url={"/mangas"} />
         <Pagination
           setPage={setPage}
           page={page}
