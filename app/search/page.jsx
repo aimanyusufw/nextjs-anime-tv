@@ -37,7 +37,7 @@ const Page = () => {
         </h1>
       </div>
       <main>
-        <AnimeList data={searchResult.data} maim_url={"/anime"} />
+        <AnimeList data={searchResult.data} maim_url={"/animes"} />
       </main>
     </section>
   );
